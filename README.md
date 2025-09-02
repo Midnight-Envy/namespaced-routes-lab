@@ -15,7 +15,7 @@ them separate from the regular user functions.
 ## Instructions
 
 The base application has been provided with tests. Make sure to run
-`rake db:seed` to set up seed data. Tests can be run with `rspec`.
+`bin/rails db:seed` to set up seed data. Tests can be run with `bin/rspec`.
 
 **Note:** Since we're building new features on an existing project that
 already has tests, part of the job is to make sure the tests that
@@ -29,7 +29,7 @@ already pass at the beginning still pass when you're done!
      the ability to add new artists to the system.
    - **Note:** There will only be 1 instance of `Preference`, not a preference
      associated with each artist/song. After creating the model, run
-     `rake preferences:load` so that your code will work in the browser. This
+     `bin/rails preferences:load` so that your code will work in the browser. This
      will run the Rake task defined in the `lib/tasks/preferences.rake` file and
      save one `Preference` instance to the database.
 2. Create a `PreferencesController`, routes, and views. Do this under an `Admin`
